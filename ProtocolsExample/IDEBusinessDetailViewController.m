@@ -26,11 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    // Override point for customization after application launch.
-    IDEBusiness *restaurante = [[IDEBusiness alloc] initWithName:@"Restaurante iOS" details:@"Restaurante en la sede oficial de Apple, donde los empleados puede comer, almorzar, y tomar." rating:3 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
-    
-    [self initWithModel:restaurante];
+    self.model = [IDEBusiness businessWithName:@"Restaurante iOS" details:@"Restaurante en la sede oficial de Apple, donde los empleados puede comer, almorzar, y tomar." rating:3 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

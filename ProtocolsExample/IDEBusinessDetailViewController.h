@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *category;
 @property (weak, nonatomic) IBOutlet UILabel *rating;
-@property (weak, nonatomic) IBOutlet UITextView *details;
+@property (weak, nonatomic) IBOutlet UILabel *details;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UIButton *webPage;
 
