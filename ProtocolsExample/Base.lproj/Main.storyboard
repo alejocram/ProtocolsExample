@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsi-zg-Wbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="1647"/>
+            <point key="canvasLocation" x="1743" y="-311"/>
         </scene>
         <!--Usuario-->
         <scene sceneID="LWC-cR-fgs">
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIT-SD-2du" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026" y="1550"/>
+            <point key="canvasLocation" x="1702" y="1014"/>
         </scene>
         <!--Business Table View Controller-->
         <scene sceneID="pqZ-98-Mgb">
@@ -128,11 +128,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" textLabel="sih-Q0-J4u" detailTextLabel="f9B-r7-v1O" style="IBUITableViewCellStyleSubtitle" id="Oc6-lT-WJA">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BusinessCell" textLabel="sih-Q0-J4u" detailTextLabel="f9B-r7-v1O" style="IBUITableViewCellStyleSubtitle" id="Oc6-lT-WJA">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oc6-lT-WJA" id="5Hd-Cq-pP8">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sih-Q0-J4u">
@@ -149,6 +149,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ld9-Ut-75W" kind="push" id="h2k-x8-hqX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -191,7 +194,6 @@
                         <segue destination="mXG-s9-AEf" kind="relationship" relationship="viewControllers" id="poa-Ay-9Cf"/>
                         <segue destination="dxf-vh-U74" kind="relationship" relationship="viewControllers" id="UzQ-NJ-toD"/>
                         <segue destination="YMN-Il-2Ze" kind="relationship" relationship="viewControllers" id="kZp-8V-Ivw"/>
-                        <segue destination="0CO-d9-ikV" kind="relationship" relationship="viewControllers" id="1U3-3D-fo1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBp-Yu-FvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -239,6 +241,7 @@
         <!--Detalle-->
         <scene sceneID="vca-hv-Ss2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK0-qr-Ls0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0CO-d9-ikV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Detalle" image="negocios-user" id="QGD-7u-6hR"/>
                     <toolbarItems/>
@@ -251,9 +254,8 @@
                         <segue destination="ld9-Ut-75W" kind="relationship" relationship="rootViewController" id="EBj-T2-TFr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KK0-qr-Ls0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="973"/>
+            <point key="canvasLocation" x="1392" y="411"/>
         </scene>
     </scenes>
     <resources>
@@ -267,4 +269,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="EBj-T2-TFr"/>
+    </inferredMetricsTieBreakers>
 </document>

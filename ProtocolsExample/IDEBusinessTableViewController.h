@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "IDEBusinessDetailViewController.h"
 
-@interface IDEBusinessTableViewController : UITableViewController
+@interface IDEBusinessTableViewController : UITableViewController<UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *businesses;
+@property (nonatomic, strong) IDEBusiness *businessSelected;
 
 @end

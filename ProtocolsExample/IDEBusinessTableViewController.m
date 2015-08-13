@@ -91,14 +91,24 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
+#pragma mark - Navigation
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using
+    ((IDEBusinessDetailViewController *) segue.destinationViewController).model = self.businessSelected;
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    IDEBusinessDetailViewController *businessDetailController = [[IDEBusinessDetailViewController alloc] init];
+    IDEBusiness *business = (self.businesses)[indexPath.row];
+    self.businessSelected = business;
+    [self.navigationController pushViewController:businessDetailController animated:YES];
+}
 
 @end
