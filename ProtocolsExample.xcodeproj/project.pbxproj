@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3D450A31B7C288000DBABF7 /* IDEBusinessTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D450A21B7C288000DBABF7 /* IDEBusinessTableViewController.m */; };
 		FE1ADB1F1B793C12001B8A16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1ADB1E1B793C12001B8A16 /* main.m */; };
 		FE1ADB221B793C12001B8A16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1ADB211B793C12001B8A16 /* AppDelegate.m */; };
 		FE1ADB281B793C12001B8A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1ADB261B793C12001B8A16 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3D450A11B7C288000DBABF7 /* IDEBusinessTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEBusinessTableViewController.h; sourceTree = "<group>"; };
+		B3D450A21B7C288000DBABF7 /* IDEBusinessTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEBusinessTableViewController.m; sourceTree = "<group>"; };
 		FE1ADB191B793C12001B8A16 /* ProtocolsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1ADB1D1B793C12001B8A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE1ADB1E1B793C12001B8A16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				FE1ADB451B793E03001B8A16 /* IDEBusinessDetailViewController.m */,
 				FE1ADB461B793E03001B8A16 /* IDEWebBusinessViewController.h */,
 				FE1ADB471B793E03001B8A16 /* IDEWebBusinessViewController.m */,
+				B3D450A11B7C288000DBABF7 /* IDEBusinessTableViewController.h */,
+				B3D450A21B7C288000DBABF7 /* IDEBusinessTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			files = (
 				FE1ADB221B793C12001B8A16 /* AppDelegate.m in Sources */,
 				FE1ADB4A1B793E03001B8A16 /* IDEWebBusinessViewController.m in Sources */,
+				B3D450A31B7C288000DBABF7 /* IDEBusinessTableViewController.m in Sources */,
 				FE1ADB491B793E03001B8A16 /* IDEBusinessDetailViewController.m in Sources */,
 				FE1ADB481B793E03001B8A16 /* IDEBusiness.m in Sources */,
 				FE1ADB1F1B793C12001B8A16 /* main.m in Sources */,

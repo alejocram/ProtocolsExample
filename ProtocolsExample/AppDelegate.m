@@ -7,19 +7,25 @@
 //
 
 #import "AppDelegate.h"
-#import "IDEBusiness.h"
 #include "IDEBusinessDetailViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
-
+@implementation AppDelegate{
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.businesses = [NSMutableArray array];
     
-    
+    IDEBusiness *business = [IDEBusiness businessWithName:@"Negocio 1" details:@"Negocio de ejemplo 1" rating:4 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
+    [self.businesses addObject:business];
+    IDEBusiness *business2 = [IDEBusiness businessWithName:@"Negocio 2" details:@"Negocio de ejemplo 2" rating:2 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
+    [self.businesses addObject:business2];
+    IDEBusiness *business3 = [IDEBusiness businessWithName:@"Negocio 3" details:@"Negocio de ejemplo 3" rating:5 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
+    [self.businesses addObject:business3];
 //    // Override point for customization after application launch.
 //    IDEBusiness *restaurante = [[IDEBusiness alloc] initWithName:@"Restaurante iOS" details:@"Restaurante en la sede oficial de Apple, donde los empleados puede comer, almorzar, y tomar." rating:3 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
 //    
@@ -28,6 +34,8 @@
 //    // Lo asignamos como controlador raíz
 //    self.window.rootViewController = VC;
 //    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
