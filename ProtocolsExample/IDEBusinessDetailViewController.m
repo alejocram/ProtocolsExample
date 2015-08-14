@@ -26,12 +26,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self syncModelWithView];
 //    self.model = [IDEBusiness businessWithName:@"Restaurante iOS" details:@"Restaurante en la sede oficial de Apple, donde los empleados puede comer, almorzar, y tomar." rating:3 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self syncModelWithView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

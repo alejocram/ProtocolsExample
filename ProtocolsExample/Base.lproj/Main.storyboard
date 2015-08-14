@@ -150,7 +150,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ld9-Ut-75W" kind="push" id="h2k-x8-hqX"/>
+                                    <segue destination="ld9-Ut-75W" kind="push" identifier="detailBusinessSegue" id="h2k-x8-hqX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -241,7 +241,6 @@
         <!--Detalle-->
         <scene sceneID="vca-hv-Ss2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KK0-qr-Ls0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0CO-d9-ikV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Detalle" image="negocios-user" id="QGD-7u-6hR"/>
                     <toolbarItems/>
@@ -254,6 +253,7 @@
                         <segue destination="ld9-Ut-75W" kind="relationship" relationship="rootViewController" id="EBj-T2-TFr"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK0-qr-Ls0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1392" y="411"/>
         </scene>
@@ -270,6 +270,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EBj-T2-TFr"/>
+        <segue reference="h2k-x8-hqX"/>
     </inferredMetricsTieBreakers>
 </document>
